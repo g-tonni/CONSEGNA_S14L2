@@ -5,6 +5,18 @@ import java.util.HashMap;
 public class Es3 {
     static void main() {
         HashMap<String, Integer> rubrica = new HashMap<>();
+        rubrica.put("Giada", 333333333);
+        rubrica.put("Mario", 222222222);
+        rubrica.put("Luca", 444444444);
+        rubrica.put("Franco", 55555555);
+
+        aggiungiContatto(rubrica,"Maria", 22224542);
+        stampa(rubrica);
+
+        rimuoviContatto(rubrica, "Mario");
+        stampa(rubrica);
+
+        trovaContattoKey(rubrica, "Giada");
 
     }
 
@@ -20,6 +32,9 @@ public class Es3 {
         System.out.println(lista.get(chiave));
     }
 
+    public static void stampa (HashMap<String, Integer> lista){
+        System.out.println(lista);
+    }
 
 
 }
